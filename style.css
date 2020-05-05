@@ -1,17 +1,77 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
- body {
-                font-family: Arial, sans-serif;
-                margin: 20px;
-            }
-            form {
-                font-size: 1.5em;
-            }
-            .scrambled, input, button {
-                font-family: monospace;
-                font-size: 2em;
-            }
+html {
+  background-image: -webkit-linear-gradient(bottom, #f4e2c9 20%, #f4d7c9 100%);
+  background-image: -ms-linear-gradient(bottom, #f4e2c9 20%, #f4d7c9 100%);
+  background-image: linear-gradient(to bottom, #f4e2c9 20%, #f4d7c9 100%);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+form {
+  font-size: 1.5em;
+}
+.scrambled,
+input,
+button {
+  font-family: monospace;
+  font-size: 2em;
+}
+
+#myUl {
+  display: inline;
+}
+
+#myUl li {
+  display: inline;
+  margin: 0.5em;
+}
+
+.table {
+  font-size: 2em;
+  margin: 8px 20px 10px 0;
+  padding: 5px 10px;
+
+  display: table; /* Allow the centering to work */
+  margin: 0 auto;
+
+  color: #fff;
+
+  min-width: 10px;
+  background-color: #5f9edf;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+
+  flex-flow: row wrap;
+  flex: 0 1 auto;
+  margin-bottom: 2em;
+}
+
+.block {
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #ffc5ce;
+  flex: 0 0 9%;
+  margin: 1.5% 2%;
+  text-align: center;
+  border: 2px solid #f07d71;
+  padding: 1em;
+}
+
+#x {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
