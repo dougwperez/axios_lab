@@ -22,7 +22,19 @@ if (randomnum == 1) {
   var words = ["goes", "boy", "dancing", "The", "night", "every"];
   var finalAnswer = "Theboygoesdancingeverynight";
 }
+//IMG
+var img = document.createElement("img");
+img.src = "goodjobbanner.jpg";
+var src = document.getElementById("x");
+img.height = 275;
+img.width = 450;
+img.style.margin = "0 auto";
 
+//AUDIO
+var win = new Audio();
+win.src = "score.mp3";
+
+//src.appendChild(img);
 let log = document.getElementById("finresult");
 
 const targetNode = document.getElementById("myUl");
@@ -34,6 +46,8 @@ const callback = function (mutationsList, observer) {
       console.log("The " + mutation.attributeName + " attribute was modified.");
       console.log(myUl.textContent);
       console.log("Correct Order");
+      win.play();
+      src.appendChild(img);
       log.textContent = "correct";
     }
   }
