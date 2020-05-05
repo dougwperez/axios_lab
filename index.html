@@ -1,94 +1,106 @@
 <DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
 
-	<html lang="en">
-	<head>
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-		<meta charset= "UTF-8">
+      <title>Unscramble</title>
 
-		<title> Unscramble </title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
 
-		<link rel= "stylesheet" href = "style.css">
+    <body>
+      <div class="row">
+        <span class="block">
+          <form id="problem1">
+            <label>
+              <span id="p1code" class="scrambled"></span>
+              <input type="text" name="answer" size="10" />
+            </label>
+            <button type="submit">Check</button>
+          </form>
+          <div id="result"></div>
+        </span>
 
-	</head>
+        <span class="block">
+          <form id="problem2">
+            <label>
+              <span id="p2code" span class="scrambled" name="code"></span>
+              <br />
+              <input type="text" name="answer" size="10" />
+            </label>
+            <button type="submit">Check</button>
+          </form>
+          <div id="result2"></div>
+        </span>
 
-	<body>
+        <span class="block">
+          <form id="problem3">
+            <label>
+              <span id="p3code" span class="scrambled" name="code"></span>
+              <br />
+              <input type="text" name="answer" size="10" />
+            </label>
+            <button type="submit">Check</button>
+          </form>
+          <div id="result3"></div>
+        </span>
 
-<h1>Word game!</h1>
-    <form id="problem1">
-        <label>
-        	<br>
-            Unscramble these letters to form a word:<br><br>
-            <span class="scrambled">REYJUQ</span>
-            <br>
-            <input type="text" name = "answer" size="10">
-        </label>
-        <button type="submit">Check</button>
-    </form>
-    <div id="result"></div>
-    
-    <br>
-    <br>
-      <form id="problem2">
-        <label>
-            <span class="scrambled">ACIHN</span>
-            <br>
-            <input type="text" name = "answer" size="10">
-        </label>
-        <button type="submit">Check</button>
-    </form>
-    <div id="result2"></div>
+        <span class="block">
+          <form id="problem4">
+            <label>
+              <span id="p4code" span class="scrambled" name="code"></span>
+              <br />
+              <input type="text" name="answer" size="10" />
+            </label>
+            <button type="submit">Check</button>
+          </form>
+          <div id="result4"></div>
+        </span>
 
-    <br>
-    <br>
+        
 
-    <form id="problem3">
-        <label>
-        	<span class="scrambled">ERALNRDE</span>
-        	<br>
-        	<input type="text" name= "answer" size="10">
-        </label>
-        <button type="submit">Check</button>
-    </form>
-    <div id="result3"></div>
+        <span class="block">
+        <form id="problem5">
+          <label>
+            <span id="p5code" span class="scrambled" name="code"></span>
+            <br />
+            <input type="text" name="answer" size="10" />
+          </label>
+          <button type="submit">Check</button>
+        </form>
+        <div id="result5"></div>
+        </span>
+        
+        <span class="block">
+        <form id="problem6">
+          <label>
+            <span id="p6code" span class="scrambled" name="code"></span>
+            <br />
+            <input type="text" name="answer" size="10" />
+          </label>
+          <button type="submit">Check</button>
+        </form>
+        <div id="result6"></div>
+      </div>
+    </span>
 
+     
+    <div id="x"></div>
+    <br />
+      <div class="table" >
+        <ul id="myUl" ></ul>
+      </div>
+      
+      
+      
 
-    <br>
-    <br>
+      <br />
+      <br />
 
-     <form id="problem4">
-        <label>
-        	<span class="scrambled">HIWEL</span>
-        	<br>
-        	<input type="text" name= "answer" size="10">
-        </label>
-        <button type="submit">Check</button>
-    </form>
-    <div id="result4"></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.1/Sortable.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-
-    <br>
-    <br>
-
-
-    <form id="problem5">
-        <label>
-        	<span class="scrambled">EMUMSR</span>
-        	<br>
-        	<input type="text" name= "answer" size="10">
-        </label>
-        <button type="submit">Check</button>
-    </form>
-    <div id="result5"></div>
-
-
-    <br>
-    <br>
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-		<script src = "script.js"> </script>
-	</body>
-
-	</html>
+      <script src="script.js"></script>
+    </body>
+  </html>
+</DOCTYPE>
