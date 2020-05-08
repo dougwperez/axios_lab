@@ -61,17 +61,34 @@ button {
 .block {
   border-radius: 20px;
   cursor: pointer;
-  background-color: #ffc5ce;
+  color: #fff;
+  background-color: #28c97a;
   flex: 0 0 9%;
   margin: 1.5% 2%;
   text-align: center;
-  border: 2px solid #f07d71;
+  /*border: 2px solid #f07d71; */
   padding: 1em;
+}
+#check {
+  padding: 0.2em;
+  margin: 0.25em;
+  font-size: 1.5em;
 }
 
 #x {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  max-width: 100%;
+  height: 100%;
+  background: white;
 }
