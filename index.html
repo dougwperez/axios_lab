@@ -9,18 +9,23 @@
     </head>
 
     <body>
+
+  
+
       <div class="row">
         <span class="block">
           <form id="problem1">
             <label>
-              <span id="p1code" class="scrambled"></span>
+              <span id="p1code" class="scrambled" name="code"></span>
+              <br />
               <input type="text" name="answer" size="10" />
             </label>
-            <button type="submit">Check</button>
+            <button type="submit" id="check">Check</button>
           </form>
           <div id="result"></div>
         </span>
 
+        
         <span class="block">
           <form id="problem2">
             <label>
@@ -28,7 +33,7 @@
               <br />
               <input type="text" name="answer" size="10" />
             </label>
-            <button type="submit">Check</button>
+            <button type="submit" id="check">Check</button>
           </form>
           <div id="result2"></div>
         </span>
@@ -40,7 +45,7 @@
               <br />
               <input type="text" name="answer" size="10" />
             </label>
-            <button type="submit">Check</button>
+            <button type="submit" id="check">Check</button>
           </form>
           <div id="result3"></div>
         </span>
@@ -52,7 +57,7 @@
               <br />
               <input type="text" name="answer" size="10" />
             </label>
-            <button type="submit">Check</button>
+            <button type="submit" id="check">Check</button>
           </form>
           <div id="result4"></div>
         </span>
@@ -66,7 +71,7 @@
             <br />
             <input type="text" name="answer" size="10" />
           </label>
-          <button type="submit">Check</button>
+          <button type="submit" id="check" >Check</button>
         </form>
         <div id="result5"></div>
         </span>
@@ -78,7 +83,7 @@
             <br />
             <input type="text" name="answer" size="10" />
           </label>
-          <button type="submit">Check</button>
+          <button type="submit" id="check">Check</button>
         </form>
         <div id="result6"></div>
       </div>
@@ -91,11 +96,15 @@
         <ul id="myUl" ></ul>
       </div>
       
+      <div class="modal" id="modal">
+        <button onclick="easyMode()">Easy</button>
+        <button onclick="mediumMode()">Medium</button>
+        <button onclick="hardMode()">Hard</button>
       
+      </div>
       
 
-      <br />
-      <br />
+      
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.1/Sortable.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
