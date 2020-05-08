@@ -1,8 +1,5 @@
 var el = document.getElementById("myUl");
 var sortable = Sortable.create(el);
-//CHANGE *1 to *2 for second game mode
-var randomnum = Math.floor(Math.random() * 2) + 1;
-console.log(randomnum);
 
 var array = [];
 
@@ -12,16 +9,89 @@ array.forEach(function (item) {
   li.appendChild(text);
   document.getElementById("myUl").appendChild(li);
 });
+var codes;
+var finalAnswer;
+var words;
 //Data bank
-if (randomnum == 1) {
-  var codes = ["qjyreu", "achin", "eralnrde", "hiwel", "eW", "ni"];
-  var words = ["jquery", "china", "learned", "while", "We", "in"];
-  var finalAnswer = "Welearnedjquerywhileinchina";
-} else if (randomnum == 2) {
-  var codes = ["oegs", "yob", "nignadc", "hTe", "ightn", "veery"];
-  var words = ["goes", "boy", "dancing", "The", "night", "every"];
-  var finalAnswer = "Theboygoesdancingeverynight";
+
+function easyMode() {
+  modal.style.display = "none"; //removes modal
+  var randomnum = Math.floor(Math.random() * 3) + 1;
+  finalAnswer, codes, words;
+  if (randomnum == 1) {
+    codes = ["yob", "clsaomrso.", "gose", "hte", "ot", "heT"];
+    words = ["boy", "classroom.", "goes", "the", "to", "The"];
+    finalAnswer = "Theboygoestotheclassroom.";
+  } else if (randomnum == 2) {
+    codes = ["oMo", "ovel", "wsim.", "ot", "add", "nad"];
+    words = ["Mom", "love", "swim.", "to", "dad", "and"];
+    finalAnswer = "Momanddadlovetoswim.";
+  } else if (randomnum == 3) {
+    codes = ["tac.", "ftaer", "hTe", "god", "hte", "cahses"];
+    words = ["cat.", "after", "The", "dog", "the", "chases"];
+    finalAnswer = "Thedogchasesafterthecat.";
+  }
+  $("#p1code").html(codes[0]);
+  $("#p2code").html(codes[1]);
+  $("#p3code").html(codes[2]);
+  $("#p4code").html(codes[3]);
+  $("#p5code").html(codes[4]);
+  $("#p6code").html(codes[5]);
+  return [finalAnswer, codes, words];
 }
+
+function mediumMode() {
+  modal.style.display = "none"; //removes modal
+  var randomnum = Math.floor(Math.random() * 3) + 1;
+  finalAnswer, codes, words;
+  if (randomnum == 1) {
+    codes = ["adevretnu", "iggno", "eW", "rea", "no", "na"];
+    words = ["adventure", "going", "We", "are", "on", "an"];
+    finalAnswer = "Wearegoingonanadventure";
+  } else if (randomnum == 2) {
+    codes = ["ifavoetr", "yM", "ttoPer", "si", "kobo", "arrHy"];
+    words = ["favorite", "My", "Potter", "is", "book", "Harry"];
+    finalAnswer = "MyfavoritebookisHarryPotter";
+  } else if (randomnum == 3) {
+    codes = ["ouyr", "stmu", "xames", "oYu", "tsudy", "ofr"];
+    words = ["your", "must", "exams", "You", "study", "for"];
+    finalAnswer = "Youmuststudyforyourexams";
+  }
+  $("#p1code").html(codes[0]);
+  $("#p2code").html(codes[1]);
+  $("#p3code").html(codes[2]);
+  $("#p4code").html(codes[3]);
+  $("#p5code").html(codes[4]);
+  $("#p6code").html(codes[5]);
+  return [finalAnswer, codes, words];
+}
+
+function hardMode() {
+  modal.style.display = "none"; //removes modal
+  var randomnum = Math.floor(Math.random() * 3) + 1;
+  finalAnswer, codes, words;
+  if (randomnum == 1) {
+    codes = ["qjyreu", "achin", "eralnrde", "hiwel", "eW", "ni"];
+    words = ["jquery", "china", "learned", "while", "We", "in"];
+    finalAnswer = "Welearnedjquerywhileinchina";
+  } else if (randomnum == 2) {
+    codes = ["oegs", "yob", "nignadc", "hTe", "ightn", "veery"];
+    words = ["goes", "boy", "dancing", "The", "night", "every"];
+    finalAnswer = "Theboygoesdancingeverynight";
+  } else if (randomnum == 3) {
+    codes = ["ilwl", "ov1C9i-d", "eatb", "hTe", "eevlyunlat", "rdwlo"];
+    words = ["will", "Covid-19", "beat", "The", "eventually", "world"];
+    finalAnswer = "TheworldwilleventuallybeatCovid-19";
+  }
+  $("#p1code").html(codes[0]);
+  $("#p2code").html(codes[1]);
+  $("#p3code").html(codes[2]);
+  $("#p4code").html(codes[3]);
+  $("#p5code").html(codes[4]);
+  $("#p6code").html(codes[5]);
+  return [finalAnswer, codes, words];
+}
+
 //IMG
 var img = document.createElement("img");
 img.src = "goodjobbanner.jpg";
@@ -34,7 +104,6 @@ img.style.margin = "0 auto";
 var win = new Audio();
 win.src = "score.mp3";
 
-//src.appendChild(img);
 let log = document.getElementById("finresult");
 
 const targetNode = document.getElementById("myUl");
@@ -58,7 +127,6 @@ const observer = new MutationObserver(callback);
 // Start observing the target node for configured mutations
 observer.observe(targetNode, config);
 
-$("#p1code").html(codes[0]);
 $("#problem1").on("submit", function (event) {
   event.preventDefault();
   var $answer = $(this).find("[name = answer]");
@@ -74,7 +142,6 @@ $("#problem1").on("submit", function (event) {
   }
 });
 
-$("#p2code").html(codes[1]);
 $("#problem2").on("submit", function (event) {
   event.preventDefault();
   var $answer = $(this).find("[name = answer]");
@@ -90,7 +157,6 @@ $("#problem2").on("submit", function (event) {
   }
 });
 
-$("#p3code").html(codes[2]);
 $("#problem3").on("submit", function (event) {
   event.preventDefault();
   var $answer = $(this).find("[name = answer]");
@@ -106,7 +172,6 @@ $("#problem3").on("submit", function (event) {
   }
 });
 
-$("#p4code").html(codes[3]);
 $("#problem4").on("submit", function (event) {
   event.preventDefault();
   var $answer = $(this).find("[name = answer]");
@@ -122,7 +187,6 @@ $("#problem4").on("submit", function (event) {
   }
 });
 
-$("#p5code").html(codes[4]);
 $("#problem5").on("submit", function (event) {
   event.preventDefault();
   var $answer = $(this).find("[name = answer]");
@@ -138,7 +202,6 @@ $("#problem5").on("submit", function (event) {
   }
 });
 
-$("#p6code").html(codes[5]);
 $("#problem6").on("submit", function (event) {
   event.preventDefault();
   var $answer = $(this).find("[name = answer]");
