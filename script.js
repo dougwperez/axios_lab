@@ -16,20 +16,32 @@ var words;
 
 function easyMode() {
   modal.style.display = "none"; //removes modal
-  var randomnum = Math.floor(Math.random() * 3) + 1;
+  var randomnum = Math.floor(Math.random() * 6) + 1;
   finalAnswer, codes, words;
   if (randomnum == 1) {
     codes = ["yob", "clsaomrso.", "gose", "hte", "ot", "heT"];
     words = ["boy", "classroom.", "goes", "the", "to", "The"];
     finalAnswer = "Theboygoestotheclassroom.";
   } else if (randomnum == 2) {
-    codes = ["oMo", "ovel", "wsim.", "ot", "add", "nad"];
+    codes = ["oMm", "ovel", "wsim.", "ot", "add", "nad"];
     words = ["Mom", "love", "swim.", "to", "dad", "and"];
     finalAnswer = "Momanddadlovetoswim.";
   } else if (randomnum == 3) {
     codes = ["tac.", "ftaer", "hTe", "god", "hte", "cahses"];
     words = ["cat.", "after", "The", "dog", "the", "chases"];
     finalAnswer = "Thedogchasesafterthecat.";
+  } else if (randomnum == 4) {
+    codes = ["nru", "isernfd.", "velo", "twih", "ot", "I"];
+    words = ["run", "friends.", "love", "with", "to", "I"];
+    finalAnswer = "Ilovetorunwithfriends.";
+  } else if (randomnum == 5) {
+    codes = ["ot", "alkw", "yM", "kelis", "god", "ehmo."];
+    words = ["to", "walk", "My", "likes", "dog", "home."];
+    finalAnswer = "Mydoglikestowalkhome.";
+  } else if (randomnum == 6) {
+    codes = ["rsfei", "ehT", "urhgembar", "elmls", "nad", "gdoo."];
+    words = ["fries", "The", "hamburger", "smell", "and", "good."];
+    finalAnswer = "Thehamburgerandfriessmellgood.";
   }
   $("#p1code").html(codes[0]);
   $("#p2code").html(codes[1]);
@@ -37,43 +49,58 @@ function easyMode() {
   $("#p4code").html(codes[3]);
   $("#p5code").html(codes[4]);
   $("#p6code").html(codes[5]);
+
   return [finalAnswer, codes, words];
 }
 
 function mediumMode() {
   modal.style.display = "none"; //removes modal
-  var randomnum = Math.floor(Math.random() * 3) + 1;
+  var randomnum = Math.floor(Math.random() * 6) + 1;
   finalAnswer, codes, words;
   if (randomnum == 1) {
-    codes = ["adevretnu", "iggno", "eW", "rea", "no", "na"];
-    words = ["adventure", "going", "We", "are", "on", "an"];
-    finalAnswer = "Wearegoingonanadventure";
+    codes = ["adevretnu.", "iggno", "eW", "rea", "no", "na"];
+    words = ["adventure.", "going", "We", "are", "on", "an"];
+    finalAnswer = "Wearegoingonanadventure.";
   } else if (randomnum == 2) {
-    codes = ["ifavoetr", "yM", "ttoPer", "si", "kobo", "arrHy"];
-    words = ["favorite", "My", "Potter", "is", "book", "Harry"];
-    finalAnswer = "MyfavoritebookisHarryPotter";
+    codes = ["ifavoetr", "yM", "ttoPer.", "si", "kobo", "arrHy"];
+    words = ["favorite", "My", "Potter.", "is", "book", "Harry"];
+    finalAnswer = "MyfavoritebookisHarryPotter.";
   } else if (randomnum == 3) {
-    codes = ["ouyr", "stmu", "xames", "oYu", "tsudy", "ofr"];
-    words = ["your", "must", "exams", "You", "study", "for"];
-    finalAnswer = "Youmuststudyforyourexams";
+    codes = ["ouyr", "stmu", "xames.", "oYu", "tsudy", "ofr"];
+    words = ["your", "must", "exams.", "You", "study", "for"];
+    finalAnswer = "Youmuststudyforyourexams.";
+  } else if (randomnum == 4) {
+    codes = ["fciiudftl", "si", "cieceSn", "eyvr", "cbjesut.", "a"];
+    words = ["difficult", "is", "Science", "very", "subject.", "a"];
+    finalAnswer = "Scienceisaverydifficultsubject.";
+  } else if (randomnum == 5) {
+    codes = ["na", "vahe", "idaP.", "ueds", "I", "ot"];
+    words = ["an", "have", "iPad.", "used", "I", "to"];
+    finalAnswer = "IusedtohaveaniPad.";
+  } else if (randomnum == 6) {
+    codes = ["ttes", "teh", "eadtrsh", "koto", "eW", "vree."];
+    words = ["test", "the", "hardest", "took", "We", "ever."];
+    finalAnswer = "Wetookthehardesttestever.";
   }
+  console.log(randomnum);
   $("#p1code").html(codes[0]);
   $("#p2code").html(codes[1]);
   $("#p3code").html(codes[2]);
   $("#p4code").html(codes[3]);
   $("#p5code").html(codes[4]);
   $("#p6code").html(codes[5]);
+  $("#p6code").html(codes[6]);
   return [finalAnswer, codes, words];
 }
 
 function hardMode() {
   modal.style.display = "none"; //removes modal
-  var randomnum = Math.floor(Math.random() * 3) + 1;
+  var randomnum = Math.floor(Math.random() * 6) + 1;
   finalAnswer, codes, words;
   if (randomnum == 1) {
-    codes = ["qjyreu", "achin", "eralnrde", "hiwel", "eW", "ni"];
-    words = ["jquery", "china", "learned", "while", "We", "in"];
-    finalAnswer = "Welearnedjquerywhileinchina";
+    codes = ["heseniC", "aChin", "eralnrde", "hiwel", "eW", "ni"];
+    words = ["Chinese", "China", "learned", "while", "We", "in"];
+    finalAnswer = "WelearnedChinesewhileinChina";
   } else if (randomnum == 2) {
     codes = ["oegs", "yob", "nignadc", "hTe", "ightn", "veery"];
     words = ["goes", "boy", "dancing", "The", "night", "every"];
@@ -82,6 +109,32 @@ function hardMode() {
     codes = ["ilwl", "ov1C9i-d", "eatb", "hTe", "eevlyunlat", "rdwlo"];
     words = ["will", "Covid-19", "beat", "The", "eventually", "world"];
     finalAnswer = "TheworldwilleventuallybeatCovid-19";
+  } else if (randomnum == 4) {
+    codes = [
+      "si",
+      "eth",
+      "riinblcyde",
+      "nmittrpao.",
+      "vetennnrimo",
+      "irogtcPent",
+    ];
+    words = [
+      "is",
+      "the",
+      "incredibly",
+      "important.",
+      "environment",
+      "Protecting",
+    ];
+    finalAnswer = "Protectingtheenvironmentisincrediblyimportant.";
+  } else if (randomnum == 5) {
+    codes = ["si", "esesennct", "griitWn", "rodw", "isx", "rtrusfintga."];
+    words = ["is", "sentences", "Writing", "word", "six", "frustrating."];
+    finalAnswer = "Writingsixwordsentencesisfrustrating.";
+  } else if (randomnum == 6) {
+    codes = ["dwlro.", "eH", "tlarev", "ot", "eht", "vleos"];
+    words = ["world.", "He", "travel", "to", "the", "loves"];
+    finalAnswer = "Helovestotraveltheworld.";
   }
   $("#p1code").html(codes[0]);
   $("#p2code").html(codes[1]);
@@ -89,6 +142,7 @@ function hardMode() {
   $("#p4code").html(codes[3]);
   $("#p5code").html(codes[4]);
   $("#p6code").html(codes[5]);
+  $("#p6code").html(codes[6]);
   return [finalAnswer, codes, words];
 }
 
