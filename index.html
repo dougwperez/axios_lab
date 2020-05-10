@@ -1,14 +1,20 @@
 <DOCTYPE html>
   <html lang="en">
     <head>
+      <link rel="icon" href="logo.ico" type="image/x-icon" />
+      <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
       <meta charset="UTF-8" />
-
       <title>Unscramble</title>
 
       <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
+
+      <div class="toggler">
+        <li class="list" id=MM><a href="https://dougwperez.github.io/Word-Unscramble-Game/"><strong>Main Menu</strong></a></li>
+        <li class="list"><a href="#news"><strong>Need a hint?</strong></a></li>
+      </div>
 
   
 
@@ -95,11 +101,22 @@
       <div class="table" >
         <ul id="myUl" ></ul>
       </div>
+
+      
       
       <div class="modal" id="modal">
-        <button onclick="easyMode()">Easy</button>
-        <button onclick="mediumMode()">Medium</button>
-        <button onclick="hardMode()">Hard</button>
+        <h1>U n s c r a m b l e</h1>
+        
+        <nav>
+          <ul>
+            <li><span onclick="easyMode()">Easy</span></li>
+            <li><span onclick="mediumMode()">Medium</span></li>
+            <li><span onclick="hardMode()">Hard</span></li>
+            <li><span>About</span></li>
+            <li><a href="https://dougwperez.github.io/EnglishGames/" style=" text-decoration: none;"><span>Exit</span></a></li>
+          </ul>
+        </nav>
+          
       
       </div>
       
