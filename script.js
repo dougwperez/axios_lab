@@ -108,7 +108,7 @@ function easyMode() {
 function mediumMode() {
   modal.style.display = "none"; //removes modal
   var randomnum = Math.floor(Math.random() * 15) + 1;
-  finalAnswer, codes, words, hints;
+  finalAnswer, codes, words;
   if (randomnum == 1) {
     codes = ["adevretnu.", "iggno", "eW", "rea", "no", "na"];
     words = ["adventure.", "going", "We", "are", "on", "an"];
@@ -140,50 +140,50 @@ function mediumMode() {
     finalAnswer = "Wetookthehardesttestever.";
     hints = "A test like the SAT or the Gaokao.";
   } else if (randomnum == 7) {
-    codes = ["nru", "isernfd.", "velo", "twih", "ot", "I"];
-    words = ["run", "friends.", "love", "with", "to", "I"];
-    finalAnswer = "Ilovetorunwithfriends.";
-    hints = "The opposite of walking, the opposite of hate.";
+    codes = ["eth", "filsetva.", "rooomwrT", "og", "ot", "est'l"];
+    words = ["the", "festival.", "Tomorrow", "go", "to", "let's"];
+    finalAnswer = "Tomorrowlet'sgotothefestival.";
+    hints = "After today, we will go to a place with music and food.";
   } else if (randomnum == 8) {
-    codes = ["ot", "alkw", "yM", "kelis", "god", "ehmo."];
-    words = ["to", "walk", "My", "likes", "dog", "home."];
-    finalAnswer = "Mydoglikestowalkhome.";
-    hints = "Two free answers: likes and walk.";
+    codes = ["em", "etelbrir", "a", "dtlo", "eH", "ile."];
+    words = ["me", "terrible", "a", "told", "He", "lie."];
+    finalAnswer = "Hetoldmeaterriblelie.";
+    hints = "The opposite of wonderful truth.";
   } else if (randomnum == 9) {
-    codes = ["rsfei", "ehT", "urhgembar", "elmls", "nad", "gdoo."];
-    words = ["fries", "The", "hamburger", "smell", "and", "good."];
-    finalAnswer = "Thehamburgerandfriessmellgood.";
-    hints = "Food from Mcdonalds.";
+    codes = ["dusyt.", "Yuo", "me", "rimesopd", "ldwuo", "uoy"];
+    words = ["study.", "You", "me", "promised", "would", "you"];
+    finalAnswer = "Youpromisedmeyouwouldstudy.";
+    hints = "What your parents might say to you.";
   } else if (randomnum == 10) {
-    codes = ["nru", "isernfd.", "velo", "twih", "ot", "I"];
-    words = ["run", "friends.", "love", "with", "to", "I"];
-    finalAnswer = "Ilovetorunwithfriends.";
-    hints = "The opposite of walking, the opposite of hate.";
+    codes = ["si", "fo", "sopirn", "rprisesno.", "lluf", "eTh"];
+    words = ["is", "of", "prison", "prisoners.", "full", "The"];
+    finalAnswer = "Theprisonisfullofprisoners.";
+    hints = "Where you go when you break the law.";
   } else if (randomnum == 11) {
-    codes = ["ot", "alkw", "yM", "kelis", "god", "ehmo."];
-    words = ["to", "walk", "My", "likes", "dog", "home."];
-    finalAnswer = "Mydoglikestowalkhome.";
-    hints = "Two free answers: likes and walk.";
+    codes = ["kitseasm", "nltaura.", "yoln", "oT", "si", "aemk"];
+    words = ["mistakes", "natural.", "only", "To", "is", "make"];
+    finalAnswer = "Tomakemistakesisonlynatural.";
+    hints = "To make mistakes is human.";
   } else if (randomnum == 12) {
-    codes = ["rsfei", "ehT", "urhgembar", "elmls", "nad", "gdoo."];
-    words = ["fries", "The", "hamburger", "smell", "and", "good."];
-    finalAnswer = "Thehamburgerandfriessmellgood.";
-    hints = "Food from Mcdonalds.";
+    codes = ["atnw", "ot", "yuo", "od", "Wtha", "od?"];
+    words = ["want", "to", "you", "do", "What", "do?"];
+    finalAnswer = "Whatdoyouwanttodo?";
+    hints = "Just a actions.";
   } else if (randomnum == 13) {
-    codes = ["nru", "isernfd.", "velo", "twih", "ot", "I"];
-    words = ["run", "friends.", "love", "with", "to", "I"];
-    finalAnswer = "Ilovetorunwithfriends.";
-    hints = "The opposite of walking, the opposite of hate.";
+    codes = ["is", "fra", "vrye", "yaaw.", "ehT", "sdilna"];
+    words = ["is", "far", "very", "away.", "The", "island"];
+    finalAnswer = "Theislandisveryfaraway.";
+    hints = "This place is surrounded by water on all sides.";
   } else if (randomnum == 14) {
-    codes = ["ot", "alkw", "yM", "kelis", "god", "ehmo."];
-    words = ["to", "walk", "My", "likes", "dog", "home."];
-    finalAnswer = "Mydoglikestowalkhome.";
-    hints = "Two free answers: likes and walk.";
+    codes = ["a", "heav", "eipssrd.", "aerf", "fo", "yeTh"];
+    words = ["a", "have", "spiders.", "fear", "of", "They"];
+    finalAnswer = "Theyhaveafearofspiders.";
+    hints = "Something people are afraid of.";
   } else if (randomnum == 15) {
-    codes = ["rsfei", "ehT", "urhgembar", "elmls", "nad", "gdoo."];
-    words = ["fries", "The", "hamburger", "smell", "and", "good."];
-    finalAnswer = "Thehamburgerandfriessmellgood.";
-    hints = "Food from Mcdonalds.";
+    codes = ["hnlpaesEt", "rae", "cmei.", "uoiyvslbo", "rggbei", "ahnt"];
+    words = ["Elephants", "are", "mice.", "obviously", "bigger", "than"];
+    finalAnswer = "Elephantsareobviouslybiggerthanmice.";
+    hints = "Obviously goes before bigger.";
   }
   console.log(randomnum);
   $("#p1code").html(codes[0]);
@@ -199,6 +199,7 @@ function mediumMode() {
 function hardMode() {
   modal.style.display = "none"; //removes modal
   var randomnum = Math.floor(Math.random() * 15) + 1;
+  var randomnum = 15;
   finalAnswer, codes, words;
   if (randomnum == 1) {
     codes = ["heseniC", "aChin", "eralnrde", "hiwel", "eW", "ni"];
@@ -245,50 +246,50 @@ function hardMode() {
     finalAnswer = "Helovestotraveltheworld.";
     hints = "What you do when you go to many countries.";
   } else if (randomnum == 7) {
-    codes = ["nru", "isernfd.", "velo", "twih", "ot", "I"];
-    words = ["run", "friends.", "love", "with", "to", "I"];
-    finalAnswer = "Ilovetorunwithfriends.";
-    hints = "The opposite of walking, the opposite of hate.";
+    codes = ["si", "tnhisk", "ehs", "eH", "oto", "tclemitaraiis."];
+    words = ["is", "thinks", "she", "He", "too", "materialistic."];
+    finalAnswer = "Hethinkssheistoomaterialistic.";
+    hints = "The root word is material.";
   } else if (randomnum == 8) {
-    codes = ["ot", "alkw", "yM", "kelis", "god", "ehmo."];
-    words = ["to", "walk", "My", "likes", "dog", "home."];
-    finalAnswer = "Mydoglikestowalkhome.";
-    hints = "Two free answers: likes and walk.";
+    codes = ["nsur", "elefs", "eh", "livae.", "eh", "enhW"];
+    words = ["runs", "feels", "he", "alive.", "he", "When"];
+    finalAnswer = "Whenherunshefeelsalive.";
+    hints = "An activity that is healthy.";
   } else if (randomnum == 9) {
-    codes = ["rsfei", "ehT", "urhgembar", "elmls", "nad", "gdoo."];
-    words = ["fries", "The", "hamburger", "smell", "and", "good."];
-    finalAnswer = "Thehamburgerandfriessmellgood.";
-    hints = "Food from Mcdonalds.";
+    codes = ["wlhei", "tpisoilc", "kalt", "vghain", "erevN", "rninde."];
+    words = ["while", "politics", "talk", "having", "Never", "dinner."];
+    finalAnswer = "Nevertalkpoliticswhilehavingdinner.";
+    hints = "Something you shouldn't talk about at dinner.";
   } else if (randomnum == 10) {
-    codes = ["nru", "isernfd.", "velo", "twih", "ot", "I"];
-    words = ["run", "friends.", "love", "with", "to", "I"];
-    finalAnswer = "Ilovetorunwithfriends.";
-    hints = "The opposite of walking, the opposite of hate.";
+    codes = ["cisum.", "eSh", "ees", "ot", "veli", "vosel"];
+    words = ["music.", "She", "see", "to", "live", "loves"];
+    finalAnswer = "Shelovestoseelivemusic.";
+    hints = "When you see a band play their music on a stage.";
   } else if (randomnum == 11) {
-    codes = ["ot", "alkw", "yM", "kelis", "god", "ehmo."];
-    words = ["to", "walk", "My", "likes", "dog", "home."];
-    finalAnswer = "Mydoglikestowalkhome.";
-    hints = "Two free answers: likes and walk.";
+    codes = ["namy", "sshakr.", "oenac", "sah", "ehT", "treefndif"];
+    words = ["many", "sharks.", "ocean", "has", "The", "different"];
+    finalAnswer = "Theoceanhasmanydifferentsharks.";
+    hints = "What lives in the sea?";
   } else if (randomnum == 12) {
-    codes = ["rsfei", "ehT", "urhgembar", "elmls", "nad", "gdoo."];
-    words = ["fries", "The", "hamburger", "smell", "and", "good."];
-    finalAnswer = "Thehamburgerandfriessmellgood.";
-    hints = "Food from Mcdonalds.";
+    codes = ["uyo", "hisus?", "scipy", "evre", "tea", "Heva"];
+    words = ["you", "sushi?", "spicy", "ever", "ate", "Have"];
+    finalAnswer = "Haveyoueveratespicysushi?";
+    hints = "A question about food.";
   } else if (randomnum == 13) {
-    codes = ["nru", "isernfd.", "velo", "twih", "ot", "I"];
-    words = ["run", "friends.", "love", "with", "to", "I"];
-    finalAnswer = "Ilovetorunwithfriends.";
-    hints = "The opposite of walking, the opposite of hate.";
+    codes = ["ti", "to", "ihhpolopys?", "syutd", "sewi", "sI"];
+    words = ["it", "to", "philosophy?", "study", "wise", "Is"];
+    finalAnswer = "Isitwisetostudyphilosophy?";
+    hints = "The study of knowledge, reality and existence.";
   } else if (randomnum == 14) {
-    codes = ["ot", "alkw", "yM", "kelis", "god", "ehmo."];
-    words = ["to", "walk", "My", "likes", "dog", "home."];
-    finalAnswer = "Mydoglikestowalkhome.";
-    hints = "Two free answers: likes and walk.";
+    codes = ["rPsitened.", "hte", "nWiohanstg", "aws", "egoreG", "frsit"];
+    words = ["President.", "the", "Washington", "was", "George", "first"];
+    finalAnswer = "GeorgeWashingtonwasthefirstPresident.";
+    hints = "A famous president of the USA.";
   } else if (randomnum == 15) {
-    codes = ["rsfei", "ehT", "urhgembar", "elmls", "nad", "gdoo."];
-    words = ["fries", "The", "hamburger", "smell", "and", "good."];
-    finalAnswer = "Thehamburgerandfriessmellgood.";
-    hints = "Food from Mcdonalds.";
+    codes = ["eth", "araaSh.", "eetrds", "si", "rsgaetl", "hTe"];
+    words = ["the", "Sahara.", "desert", "is", "largest", "The"];
+    finalAnswer = "ThelargestdesertistheSahara.";
+    hints = "A very famous desert in the world.";
   }
   $("#p1code").html(codes[0]);
   $("#p2code").html(codes[1]);
@@ -297,96 +298,6 @@ function hardMode() {
   $("#p5code").html(codes[4]);
   $("#p6code").html(codes[5]);
 
-  return [finalAnswer, codes, words];
-}
-
-function mediumMode() {
-  modal.style.display = "none"; //removes modal
-  var randomnum = Math.floor(Math.random() * 6) + 1;
-  finalAnswer, codes, words, hints;
-  if (randomnum == 1) {
-    codes = ["adevretnu.", "iggno", "eW", "rea", "no", "na"];
-    words = ["adventure.", "going", "We", "are", "on", "an"];
-    finalAnswer = "Wearegoingonanadventure.";
-    hints = "When you and your friends go somewhere new.";
-  } else if (randomnum == 2) {
-    codes = ["ifavoetr", "yM", "ttoPer.", "si", "kobo", "arrHy"];
-    words = ["favorite", "My", "Potter.", "is", "book", "Harry"];
-    finalAnswer = "MyfavoritebookisHarryPotter.";
-    hints = "A famous book series by JK Rowling.";
-  } else if (randomnum == 3) {
-    codes = ["ouyr", "stmu", "xames.", "oYu", "tsudy", "ofr"];
-    words = ["your", "must", "exams.", "You", "study", "for"];
-    finalAnswer = "Youmuststudyforyourexams.";
-    hints = "What your parents tell you to do all the time.";
-  } else if (randomnum == 4) {
-    codes = ["fciiudftl", "si", "cieceSn", "eyvr", "cbjesut.", "a"];
-    words = ["difficult", "is", "Science", "very", "subject.", "a"];
-    finalAnswer = "Scienceisaverydifficultsubject.";
-    hints = "Not math, not English and not History.";
-  } else if (randomnum == 5) {
-    codes = ["na", "vahe", "idaP.", "ueds", "I", "ot"];
-    words = ["an", "have", "iPad.", "used", "I", "to"];
-    finalAnswer = "IusedtohaveaniPad.";
-    hints = "A type of tablet.";
-  } else if (randomnum == 6) {
-    codes = ["ttes", "teh", "eadtrsh", "koto", "eW", "vree."];
-    words = ["test", "the", "hardest", "took", "We", "ever."];
-    finalAnswer = "Wetookthehardesttestever.";
-    hints = "A test like the SAT or the Gao Kao.";
-  } else if (randomnum == 7) {
-    codes = ["nru", "isernfd.", "velo", "twih", "ot", "I"];
-    words = ["run", "friends.", "love", "with", "to", "I"];
-    finalAnswer = "Ilovetorunwithfriends.";
-    hints = "The opposite of walking, the opposite of hate.";
-  } else if (randomnum == 8) {
-    codes = ["ot", "alkw", "yM", "kelis", "god", "ehmo."];
-    words = ["to", "walk", "My", "likes", "dog", "home."];
-    finalAnswer = "Mydoglikestowalkhome.";
-    hints = "Two free answers: likes and walk.";
-  } else if (randomnum == 9) {
-    codes = ["rsfei", "ehT", "urhgembar", "elmls", "nad", "gdoo."];
-    words = ["fries", "The", "hamburger", "smell", "and", "good."];
-    finalAnswer = "Thehamburgerandfriessmellgood.";
-    hints = "Food from Mcdonalds.";
-  } else if (randomnum == 10) {
-    codes = ["nru", "isernfd.", "velo", "twih", "ot", "I"];
-    words = ["run", "friends.", "love", "with", "to", "I"];
-    finalAnswer = "Ilovetorunwithfriends.";
-    hints = "The opposite of walking, the opposite of hate.";
-  } else if (randomnum == 11) {
-    codes = ["ot", "alkw", "yM", "kelis", "god", "ehmo."];
-    words = ["to", "walk", "My", "likes", "dog", "home."];
-    finalAnswer = "Mydoglikestowalkhome.";
-    hints = "Two free answers: likes and walk.";
-  } else if (randomnum == 12) {
-    codes = ["rsfei", "ehT", "urhgembar", "elmls", "nad", "gdoo."];
-    words = ["fries", "The", "hamburger", "smell", "and", "good."];
-    finalAnswer = "Thehamburgerandfriessmellgood.";
-    hints = "Food from Mcdonalds.";
-  } else if (randomnum == 13) {
-    codes = ["nru", "isernfd.", "velo", "twih", "ot", "I"];
-    words = ["run", "friends.", "love", "with", "to", "I"];
-    finalAnswer = "Ilovetorunwithfriends.";
-    hints = "The opposite of walking, the opposite of hate.";
-  } else if (randomnum == 14) {
-    codes = ["ot", "alkw", "yM", "kelis", "god", "ehmo."];
-    words = ["to", "walk", "My", "likes", "dog", "home."];
-    finalAnswer = "Mydoglikestowalkhome.";
-    hints = "Two free answers: likes and walk.";
-  } else if (randomnum == 15) {
-    codes = ["rsfei", "ehT", "urhgembar", "elmls", "nad", "gdoo."];
-    words = ["fries", "The", "hamburger", "smell", "and", "good."];
-    finalAnswer = "Thehamburgerandfriessmellgood.";
-    hints = "Food from Mcdonalds.";
-  }
-  $("#p1code").html(codes[0]);
-  $("#p2code").html(codes[1]);
-  $("#p3code").html(codes[2]);
-  $("#p4code").html(codes[3]);
-  $("#p5code").html(codes[4]);
-  $("#p6code").html(codes[5]);
-  $("#p6code").html(codes[6]);
   return [finalAnswer, codes, words];
 }
 
