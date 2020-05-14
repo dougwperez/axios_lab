@@ -199,7 +199,6 @@ function mediumMode() {
 function hardMode() {
   modal.style.display = "none"; //removes modal
   var randomnum = Math.floor(Math.random() * 15) + 1;
-  var randomnum = 15;
   finalAnswer, codes, words;
   if (randomnum == 1) {
     codes = ["heseniC", "aChin", "eralnrde", "hiwel", "eW", "ni"];
