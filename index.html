@@ -13,9 +13,15 @@
 
       <div class="toggler">
         <li class="list" id=MM><a href="https://dougwperez.github.io/Word-Unscramble-Game/"><strong>Main Menu</strong></a></li>
-        <li class="list"><a href="#news"><strong>Need a hint?</strong></a></li>
+        <li class="list" onclick="hint()"><a href="#news"><strong>Need a hint?</strong></a></li>
       </div>
 
+      
+      <div class="hintbox" id="hintbox">
+        <button class="closebtn" onclick="hidebox()"> X </button>
+        <h2>Here's a hint!</h2>
+        <span id="hinttext" class="text" name="code"></span>
+      </div>
   
 
       <div class="row">
@@ -112,10 +118,18 @@
             <li><span onclick="easyMode()">Easy</span></li>
             <li><span onclick="mediumMode()">Medium</span></li>
             <li><span onclick="hardMode()">Hard</span></li>
-            <li><span>About</span></li>
+            <li><span onclick="about()">About</span></li>
             <li><a href="https://dougwperez.github.io/EnglishGames/" style=" text-decoration: none;"><span>Exit</span></a></li>
           </ul>
         </nav>
+
+        <div class="aboutbox" id="aboutbox"><button class="closebtn" onclick="hidebox()"> X </button><h2>How to Play</h2>
+        <span class=text> First unscramble all the words in the green boxes, the order in which you do so is unimportant. After unscrambling the words, you must put the new words in the blue boxes in the correct order. If you have any difficulty, 
+          press the "Need a hint?" button.
+        </span>
+      </div>
+
+
           
       
       </div>
