@@ -107,7 +107,7 @@ function easyMode() {
 
 function mediumMode() {
   modal.style.display = "none"; //removes modal
-  var randomnum = Math.floor(Math.random() * 5) + 1;
+  var randomnum = Math.floor(Math.random() * 20) + 1;
   finalAnswer, codes, words;
   if (randomnum == 1) {
     codes = ["ni", "ecI", "nsu.", "setlm", "eht", "mcrea"];
