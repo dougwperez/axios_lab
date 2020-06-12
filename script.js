@@ -17,7 +17,7 @@ var hints;
 
 function easyMode() {
   modal.style.display = "none"; //removes modal
-  var randomnum = Math.floor(Math.random() * 15) + 1;
+  var randomnum = Math.floor(Math.random() * 20) + 1;
   finalAnswer, codes, words, hints;
   if (randomnum == 1) {
     codes = ["yob", "clsaomrso.", "gose", "hte", "ot", "heT"];
@@ -94,6 +94,31 @@ function easyMode() {
     words = ["to", "and", "We", "play.", "go", "want"];
     finalAnswer = "Wewanttogoandplay.";
     hints = "We would rather do this than our homework.";
+  } else if (randomnum == 16) {
+    codes = ["ylap", "abll.", "nma", "ot", "hTe", "olsve"];
+    words = ["play", "ball.", "man", "to", "The", "loves"];
+    finalAnswer = "Themanlovestoplayball.";
+    hints = "What you do in baseball.";
+  } else if (randomnum == 17) {
+    codes = ["yfilam", "me.las", "esnjoy", "gaient", "Teh", "gbi"];
+    words = ["family", "meals.", "enjoys", "eating", "The", "big"];
+    finalAnswer = "Thefamilyenjoyseatingbigmeals.";
+    hints = "Free word: enjoys";
+  } else if (randomnum == 18) {
+    codes = ["het", "abc.he", "sdki", "og", "eTh", "ot"];
+    words = ["the", "beach.", "kids", "go", "The", "to"];
+    finalAnswer = "Thekidsgotothebeach.";
+    hints = "This place is next to the ocean.";
+  } else if (randomnum == 19) {
+    codes = ["vole", "cei", "eta", "mca.re", "ot", "I"];
+    words = ["love", "ice", "eat", "cream.", "to", "I"];
+    finalAnswer = "Ilovetoeaticecream.";
+    hints = "This food makes you fat.";
+  } else if (randomnum == 20) {
+    codes = ["dgnna.ic", "nad", "lvoe", "oyb", "irlg", "ehT"];
+    words = ["dancing.", "and", "love", "boy", "girl", "The"];
+    finalAnswer = "Theboyandgirllovedancing.";
+    hints = "What we do when the music plays.";
   }
   $("#p1code").html(codes[0]);
   $("#p2code").html(codes[1]);
@@ -223,7 +248,7 @@ function mediumMode() {
 
 function hardMode() {
   modal.style.display = "none"; //removes modal
-  var randomnum = Math.floor(Math.random() * 15) + 1;
+  var randomnum = Math.floor(Math.random() * 18) + 1;
   finalAnswer, codes, words;
   if (randomnum == 1) {
     codes = ["heseniC", "aChin", "eralnrde", "hiwel", "eW", "ni"];
@@ -314,6 +339,35 @@ function hardMode() {
     words = ["the", "Sahara.", "desert", "is", "largest", "The"];
     finalAnswer = "ThelargestdesertistheSahara.";
     hints = "A very famous desert in the world.";
+  } else if (randomnum == 16) {
+    codes = [
+      "hlcetonocailg",
+      "adn",
+      "nesavmcatdne",
+      "era",
+      "iv.atl",
+      "Stiieincfc",
+    ];
+    words = [
+      "technological",
+      "and",
+      "advancements",
+      "are",
+      "vital.",
+      "Scientific",
+    ];
+    finalAnswer = "Scientificandtechnologicaladvancementsarevital.";
+    hints = "Root words: science and technology.";
+  } else if (randomnum == 17) {
+    codes = ["e.seGrk", "yrDomacec", "anentci", "meac", "hte", "fomr"];
+    words = ["Greeks.", "Democracy", "ancient", "came", "the", "from"];
+    finalAnswer = "DemocracycamefromtheancientGreeks.";
+    hints = "A political system where the people vote.";
+  } else if (randomnum == 18) {
+    codes = ["dna", "era", "exiEersc", "enitag", "trnioma.tp", "lwle"];
+    words = ["and", "are", "Exercise", "eating", "important.", "well"];
+    finalAnswer = "Exerciseandeatingwellareimportant.";
+    hints = "Secrets to a healthy life.";
   }
   $("#p1code").html(codes[0]);
   $("#p2code").html(codes[1]);
