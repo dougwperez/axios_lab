@@ -390,6 +390,7 @@ img.style.margin = "0 auto";
 //AUDIO
 var win = new Audio();
 win.src = "score.mp3";
+win.volume = 0.5;
 
 let log = document.getElementById("finresult");
 
