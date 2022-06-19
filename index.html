@@ -5,141 +5,30 @@
       <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
       <meta charset="UTF-8" />
       <meta name="image" property="og:image" content="https://raw.githubusercontent.com/dougwperez/Word-Unscramble-Game/master/img/unscrambledemo.png">
-      <title>Unscramble</title>
-
+      <title>Axios Lab</title>
       <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
 
-      <div class="toggler">
-        <li class="list" id=MM><a href="https://dougwperez.github.io/Word-Unscramble-Game/"><strong>Main Menu</strong></a></li>
-        <li class="list" onclick="hint()"><a href="#news"><strong>Need a hint?</strong></a></li>
-      </div>
-
-      
-      <div class="hintbox" id="hintbox">
-        <button class="closebtn" onclick="hidebox()"> X </button>
-        <h2>Here's a hint!</h2>
-        <span id="hinttext" class="text" name="code"></span>
-      </div>
-  
-
-      <div class="row">
-        <span class="block">
-          <form id="problem1">
-            <label>
-              <span id="p1code" class="scrambled" name="code"></span>
-              <br />
-              <input type="text" name="answer" size="10" />
-            </label>
-            <button type="submit" id="check1" class="check">Check</button>
-          </form>
-          <div id="result"></div>
-        </span>
-
-        
-        <span class="block">
-          <form id="problem2">
-            <label>
-              <span id="p2code" span class="scrambled" name="code"></span>
-              <br />
-              <input type="text" name="answer" size="10" />
-            </label>
-            <button type="submit" id="check2" class="check">Check</button>
-          </form>
-          <div id="result2"></div>
-        </span>
-
-        <span class="block">
-          <form id="problem3">
-            <label>
-              <span id="p3code" span class="scrambled" name="code"></span>
-              <br />
-              <input type="text" name="answer" size="10" />
-            </label>
-            <button type="submit" id="check3" class="check">Check</button>
-          </form>
-          <div id="result3"></div>
-        </span>
-
-        <span class="block">
-          <form id="problem4">
-            <label>
-              <span id="p4code" span class="scrambled" name="code"></span>
-              <br />
-              <input type="text" name="answer" size="10" />
-            </label>
-            <button type="submit" id="check4" class="check">Check</button>
-          </form>
-          <div id="result4"></div>
-        </span>
-
-        
-
-        <span class="block">
-        <form id="problem5">
-          <label>
-            <span id="p5code" span class="scrambled" name="code"></span>
-            <br />
-            <input type="text" name="answer" size="10" />
-          </label>
-          <button type="submit" id="check5" class="check" >Check</button>
-        </form>
-        <div id="result5"></div>
-        </span>
-        
-        <span class="block">
-        <form id="problem6">
-          <label>
-            <span id="p6code" span class="scrambled" name="code"></span>
-            <br />
-            <input type="text" name="answer" size="10" />
-          </label>
-          <button type="submit" id="check6" class="check">Check</button>
-        </form>
-        <div id="result6"></div>
-      </div>
-    </span>
-
-     
-    <div id="x"></div>
     <br />
       <div class="table" >
         <ul id="myUl" ></ul>
       </div>
 
-      
-      
+
       <div class="modal" id="modal">
-        <h1>U n s c r a m b l e</h1>
-        
-        <nav>
-          <ul>
-            <li><span onclick="easyMode()">Easy</span></li>
-            <li><span onclick="mediumMode()">Medium</span></li>
-            <li><span onclick="hardMode()">Hard</span></li>
-            <li><span onclick="about()">About</span></li>
-            <li><a href="https://dougwperez.github.io/ESL-MiniGames/" style=" text-decoration: none;"><span>Exit</span></a></li>
-          </ul>
-        </nav>
+        <h1>HTTP Request Lab</h1>
+        <span class="result"></span>
 
-        <div class="aboutbox" id="aboutbox"><button class="closebtn" onclick="hidebox()"> X </button><h2>How to Play</h2>
-        <span class=text> First unscramble all the words in the green boxes, the order in which you do so is unimportant. After unscrambling the words, you must put the new words in the blue boxes in the correct order. If you have any difficulty, 
-          press the "Need a hint?" button.
-        </span>
+      </div>
       </div>
 
-
-          
-      
-      </div>
-      
-
-      
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.1/Sortable.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 
       <script src="script.js"></script>
       <script src="modes/Easymode.js"></script>
