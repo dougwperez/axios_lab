@@ -15,6 +15,8 @@ const result = document.querySelector(".result");
 // };
 // getUsers();
 
+// AXIOS
+
 // const getUrls = () => {
 //   axios
 //     .get("https://public.karat.io/content/q015/urls.txt")
@@ -42,19 +44,21 @@ const result = document.querySelector(".result");
 
 // FETCH API
 
-const getUrls = () => {
-  fetch("https://ghibliapi.herokuapp.com/films")
-    .then(function (response) {
-      // Successfull fetch return as json
-      return response.json();
-    })
-    .then(function (data) {
-      // Data now contains the json
-      console.log(data[0]);
-    })
-    .catch(function (error) {
-      // A Error occured
-      console.log(error);
-    });
-};
-getUrls();
+//
+
+// const getUrls = () => {
+//   fetch("https://ghibliapi.herokuapp.com/films")
+//     .then(function (response) {
+//       // Successfull fetch return as json
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       // Data now contains the json
+//       console.log(data);
+//     })
+//     .catch(function (error) {
+//       // A Error occured
+//       console.log(error);
+//     });
+// };
+// getUrls();
