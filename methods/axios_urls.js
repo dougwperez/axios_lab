@@ -1,7 +1,4 @@
-var el = document.getElementById("myUl");
-var sortable = Sortable.create(el);
-
-const result = document.querySelector(".result");
+// Objective: Find the most common url in the list
 
 const getUrls = () => {
   axios
@@ -10,6 +7,7 @@ const getUrls = () => {
       const urls = response.data;
       const split = urls.split("\n");
       console.log(`GET split`, split);
+      // result.textContent = split;
 
       function mode(arr) {
         return arr

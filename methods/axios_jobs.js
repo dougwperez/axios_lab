@@ -1,6 +1,6 @@
 //PLAN
 
-// Find average estimated price of each contractor in the jobs array
+//Objective: Find average estimated price of each contractor in the jobs array
 
 // filter out all NON completed jobs.
 // Use reduce method and get the average of all estimated price for each job
