@@ -15,14 +15,46 @@ const result = document.querySelector(".result");
 // };
 // getUsers();
 
+// const getUrls = () => {
+//   axios
+//     .get("https://public.karat.io/content/q015/urls.txt")
+//     .then((response) => {
+//       const urls = response.data;
+//       const split = urls.split("\n");
+//       console.log(`GET split`, split);
+//       // result.textContent = split;
+
+//       function mode(arr) {
+//         return arr
+//           .sort(
+//             (a, b) =>
+//               arr.filter((v) => v === a).length -
+//               arr.filter((v) => v === b).length
+//           )
+//           .pop();
+//       }
+//       console.log("MODE", mode(split));
+//       result.textContent = mode(split);
+//     })
+//     .catch((error) => console.error(error));
+// };
+// getUrls();
+
+// FETCH API
+
 const getUrls = () => {
-  axios
-    .get("https://public.karat.io/content/q015/urls.txt")
-    .then((response) => {
-      const urls = response.data;
-      console.log(`GET urls`, urls.split("http://"));
-      result.textContent = urls;
+  fetch("https://ghibliapi.herokuapp.com/films")
+    .then(function (response) {
+      // Successfull fetch return as json
+      return response.json();
     })
-    .catch((error) => console.error(error));
+    .then(function (data) {
+      // Data now contains the json
+      console.log(data[0]);
+    })
+    .catch(function (error) {
+      // A Error occured
+      console.log(error);
+    });
 };
 getUrls();
